@@ -32,7 +32,7 @@ export default {
 
 <style>
 .slug-image-header {
-  height: 500px;
+  height: calc(20vh);
   display: block;
   overflow: hidden;
 }
@@ -72,6 +72,12 @@ h2 {
   margin-top: 10px;
 }
 
+ul {
+  padding-left: 30px;
+  list-style-type: circle;
+  margin: 10px;
+}
+
 .volver {
   color: var(--main-color-soft);
   position: fixed;
@@ -81,4 +87,3 @@ h2 {
   height: 70px;
 }
 </style>
-

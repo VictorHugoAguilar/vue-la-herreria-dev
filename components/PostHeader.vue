@@ -41,7 +41,7 @@ export default {
 }
 
 .title {
-  font-size: xx-large;
+  font-size: 4rem;
   font-weight: bolder;
 }
 </style>
