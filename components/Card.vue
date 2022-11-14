@@ -6,26 +6,18 @@
           <img :src="require(`~/assets/resources/${article.img}`)" alt="card__image" class="card__image" width="600">
         </div>
         <div class="card__body">
-          <!-- <span class="tag tag-blue">{{ article.tags }}</span> -->
           <Tags :tags="article.tags" />
           <h4>{{ article.title }}</h4>
-          <p>{{ article.description }}</p>
+          <p>{{ getDescription }}</p>
         </div>
-        <div class="card__footer">
-          <div class="user">
-            <img :src="article.iauthor" alt="user__image" class="user__image">
-            <div class="user__info">
-              <h5>{{ article.author }}</h5>
-              <small>{{ article.createdAt }}</small>
-            </div>
-          </div>
-        </div>
+        <AuthorPost :article="article" />
       </div>
     </nuxt-link>
   </div>
 </template>
 
 <script>
+import { computed } from 'vue'
 
 export default {
   name: 'CardComponent',
@@ -38,6 +30,9 @@ export default {
 
   setup(props) {
     return {
+      formateDate: computed(() => getHourDateFormated(props.article.createdAt)),
+      getDescription: computed(() => props.article.description.length > 140 ? props.article.description.slice(0, 140) + '...' : props.article.description)
+
     }
   }
 
@@ -102,58 +97,14 @@ img {
   gap: .5rem;
 }
 
-/* .tag {
-  align-self: flex-start;
-  padding: .25em .75em;
-  border-radius: 1em;
-  font-size: .75rem;
-}
-
-.tag+.tag {
-  margin-left: .5em;
-}
-
-.tag-blue {
-  background: #56CCF2;
-  background: linear-gradient(to bottom, #2F80ED, #56CCF2);
-  color: #fafafa;
-}
-
-.tag-brown {
-  background: #D1913C;
-  background: linear-gradient(to bottom, #FFD194, #D1913C);
-  color: #fafafa;
-}
-
-.tag-red {
-  background: #cb2d3e;
-  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
-  color: #fafafa;
-} */
-
 .card__body h4 {
-  font-size: 1.5rem;
+  font-size: large;
+  font-weight: bold;
   text-transform: capitalize;
 }
 
-.card__footer {
-  display: flex;
-  padding: 1rem;
-  margin-top: auto;
-}
-
-.user {
-  display: flex;
-  gap: .5rem;
-}
-
-.user__image {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-}
-
-.user__info>small {
-  color: #666;
+.card__body p {
+  font-size: medium;
+  font-weight: lighter;
 }
 </style>

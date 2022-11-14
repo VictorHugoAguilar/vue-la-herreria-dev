@@ -9,7 +9,6 @@
       </div>
     </div>
   </div>
-  </div>
 </template>
 
 <script>
@@ -20,12 +19,11 @@ export default {
 
   async asyncData({ $content, params }) {
     const articles = await $content('blog', params.slug)
-      // .only(['title', 'description', 'slug', 'img', 'tag', 'author'])
-      .sortBy('createAt', 'asc')
+      .only(['title', 'description', 'slug', 'img', 'tags', 'author', 'iauthor', 'createdAt', 'updatedAt'])
+      .sortBy('createdAt', 'desc')
       .fetch()
-
+    // eslint-disable-next-line no-console
     console.log(articles)
-
     return { articles }
   }
 

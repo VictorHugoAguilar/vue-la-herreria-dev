@@ -25,6 +25,9 @@ export default {
       if (type.trim().toLowerCase() === 'typescript') {
         return 'tag-blue'
       }
+      if (type.trim().toLowerCase() === 'vue') {
+        return 'tag-green'
+      }
       return 'tag-red'
     }
 
@@ -44,6 +47,7 @@ export default {
   padding: .25em .75em;
   border-radius: 1em;
   font-size: .75rem;
+  box-shadow: 10px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .tag+.tag {
@@ -59,6 +63,12 @@ export default {
 .tag-brown {
   background: #D1913C;
   background: linear-gradient(to bottom, #FFD194, #D1913C);
+  color: #fafafa;
+}
+
+.tag-green {
+  background: #41B883;
+  background: linear-gradient(to bottom, #9ed7be, #41B883);
   color: #fafafa;
 }
 
