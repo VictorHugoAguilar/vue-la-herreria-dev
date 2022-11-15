@@ -19,8 +19,8 @@ export default {
 
   async asyncData({ $content, params }) {
     const articles = await $content('blog', params.slug)
-      .only(['title', 'description', 'slug', 'img', 'tags', 'author', 'iauthor', 'createdAt', 'updatedAt'])
-      .sortBy('createdAt', 'desc')
+      .only(['title', 'description', 'slug', 'img', 'tags', 'author', 'iauthor', 'created', 'createdAt', 'updatedAt'])
+      .sortBy('created', 'desc')
       .fetch()
     // eslint-disable-next-line no-console
     console.log(articles)

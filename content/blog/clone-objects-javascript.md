@@ -6,6 +6,7 @@ img: clone-objects-javascript.jpg
 tags: javascript
 author: victor hugo
 iauthor: "https://lh3.googleusercontent.com/ogw/AOh-ky1WsKqyZAiMN43FUFUKq2KaBlr6gK4JXgJtrIbnjg=s32-c-mo"
+created: '2022-11-14T09:25:38.007Z'
 ---
 
 Ya que los objetos en javascript son valores por referencia, no pueden copiarse simplemente con el =. Aqui os dejo diferentes maneras de hacerlo.

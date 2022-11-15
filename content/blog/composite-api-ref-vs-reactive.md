@@ -6,6 +6,7 @@ img: composite-api-ref-vs-reactive.jpg
 tags: vue, javascript
 author: victor hugo
 iauthor: "https://lh3.googleusercontent.com/ogw/AOh-ky1WsKqyZAiMN43FUFUKq2KaBlr6gK4JXgJtrIbnjg=s32-c-mo"
+created: '2022-11-14T09:30:38.007Z'
 ---
 
 <p>La característica más importante de Vue 3 es la API de composición. Esta ofrece un enfoque alternativo para crear componentes que es muy diferente a la API de opciones existente. No tengo ningún problema en admitir que cuando lo vi por primera vez, no lo entendí. Cuanto más lo uso, más sentido tiene. Si bien no reescribirá aplicaciones completas con la API de composición, le hará pensar en cómo crear componentes y componer la funcionalidad en el futuro.</p>

@@ -24,7 +24,7 @@ export default {
   },
   setup(props) {
     return {
-      formateDate: computed(() => getHourDateFormated(props.article.createdAt)),
+      formateDate: computed(() => getHourDateFormated(props.article.created))
     }
   }
 

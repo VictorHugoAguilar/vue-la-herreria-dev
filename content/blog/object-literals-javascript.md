@@ -6,6 +6,7 @@ img: object-literals-javascript.jpg
 tags: javascript
 author: victor hugo
 iauthor: "https://lh3.googleusercontent.com/ogw/AOh-ky1WsKqyZAiMN43FUFUKq2KaBlr6gK4JXgJtrIbnjg=s32-c-mo"
+created: '2022-11-14T09:45:38.007Z'
 ---
 
 # Remplazar if...elseif..elseif o switch por object literal

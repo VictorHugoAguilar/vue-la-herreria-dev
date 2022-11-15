@@ -6,6 +6,7 @@ img: 3.jpg
 tags: javascript, typescript
 author: victor hugo
 iauthor: "https://lh3.googleusercontent.com/ogw/AOh-ky1WsKqyZAiMN43FUFUKq2KaBlr6gK4JXgJtrIbnjg=s32-c-mo"
+created: '2022-11-12T09:25:38.007Z'
 ---
 
 # tercer titulo
