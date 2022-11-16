@@ -3,10 +3,10 @@ title: Estructura de datos Tuple
 description: Las tuplas en Python son un tipo o estructura de datos que permite almacenar datos de una manera muy parecida a las listas, con la salvedad de que son inmutables.
 slug: python-data-structure-tuple
 img: python-default.jpg
-tags: programacion, python, estructura de datos
+tags: python, programacion, estructura de datos
 author: victor hugo
 iauthor: "https://lh3.googleusercontent.com/ogw/AOh-ky1WsKqyZAiMN43FUFUKq2KaBlr6gK4JXgJtrIbnjg=s32-c-mo"
-created: "2022-11-16T17:30:00.007Z"
+created: "2022-11-16T14:30:00.007Z"
 ---
 
 # Tupla (tuple)

@@ -22,3 +22,9 @@
   color: var(--main-color);
   font-weight: 500;
 }
+
+.link-to{
+  text-decoration: none;
+  font-weight: bolder;
+  color: var(--main-color);
+}

@@ -3,7 +3,7 @@ title: Estructura de datos Set
 description: Los sets en Python son una estructura de datos usadas para almacenar elementos de una manera similar a las listas, pero con ciertas diferencias.
 slug: python-data-structure-set
 img: python-default.jpg
-tags: programacion, python, estructura de datos
+tags: python, programacion, estructura de datos
 author: victor hugo
 iauthor: "https://lh3.googleusercontent.com/ogw/AOh-ky1WsKqyZAiMN43FUFUKq2KaBlr6gK4JXgJtrIbnjg=s32-c-mo"
 created: "2022-11-16T12:25:38.007Z"
