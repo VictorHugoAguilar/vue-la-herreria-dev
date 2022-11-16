@@ -60,16 +60,14 @@ h1 {
   color: var(--main-color-soft);
   font-size: 28px;
   font-weight: 900;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 15px 0px;
 }
 
 h2 {
   color: var(--main-color-soft);
   font-size: 20px;
   font-weight: 900;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin: 10px 0px;
 }
 
 ul {
@@ -85,5 +83,9 @@ ul {
   right: 110px;
   width: 70px;
   height: 70px;
+}
+
+p {
+  margin: 15px 0px;
 }
 </style>

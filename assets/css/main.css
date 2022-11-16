@@ -4,4 +4,21 @@
   --main-color: #88ddff;
   --main-color-soft: #a9e3fa;
   --main-color-text: #c3e88d;
+
+  --highlight-background-color: #69f0ae;
+  --highlight-color-text: #546e7a;
+  --highlight-padding: 2px 4px;
+  --highlight-font-size: smaller;
+}
+
+.highlight {
+  background-color: var(--highlight-background-color);
+  color: var(--highlight-color-text);
+  padding: var(--highlight-padding);
+  font-size: var(--highlight-font-size);
+}
+
+.bolder {
+  color: var(--main-color);
+  font-weight: 500;
 }
