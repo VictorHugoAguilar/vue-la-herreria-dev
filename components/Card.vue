@@ -18,6 +18,7 @@
 
 <script>
 import { computed } from 'vue'
+import { getHourDateFormated } from '@/helpers/dateHelper'
 
 export default {
   name: 'CardComponent',
@@ -27,15 +28,12 @@ export default {
       required: true
     }
   },
-
   setup(props) {
     return {
       formateDate: computed(() => getHourDateFormated(props.article.createdAt)),
-      getDescription: computed(() => props.article.description.length > 140 ? props.article.description.slice(0, 140) + '...' : props.article.description)
-
+      getDescription: computed(() => props.article.description.length > 150 ? props.article.description.slice(0, 150) + '...' : props.article.description)
     }
   }
-
 }
 </script> 
 

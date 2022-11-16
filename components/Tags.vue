@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span v-for="tag of arrayTags" :key="tag" class="tag" :class="getClass(tag)">
+    <span v-for="tag of arrayTags" :key="tag" class="tag" :style="getClass(tag)">
       {{ tag }}
     </span>
   </div>
@@ -8,6 +8,7 @@
 
 <script>
 import { computed } from 'vue'
+import { selectTag } from '@/helpers/selectorTag.js'
 export default {
   name: 'TagComponent',
   props: {
@@ -19,18 +20,8 @@ export default {
 
   setup(props) {
     const getClass = (type) => {
-      if (type.trim().toLowerCase() === 'javascript') {
-        return 'tag-brown'
-      }
-      if (type.trim().toLowerCase() === 'typescript') {
-        return 'tag-blue'
-      }
-      if (type.trim().toLowerCase() === 'vue') {
-        return 'tag-green'
-      }
-      return 'tag-red'
+      return selectTag(type.trim().toLowerCase())
     }
-
     return {
       arrayTags: computed(() => props.tags?.includes(',') ? props.tags?.split(',') : [props.tags]),
       // methods
@@ -54,27 +45,4 @@ export default {
   margin-left: .5em;
 }
 
-.tag-blue {
-  background: #56CCF2;
-  background: linear-gradient(to bottom, #2F80ED, #56CCF2);
-  color: #fafafa;
-}
-
-.tag-brown {
-  background: #D1913C;
-  background: linear-gradient(to bottom, #FFD194, #D1913C);
-  color: #fafafa;
-}
-
-.tag-green {
-  background: #41B883;
-  background: linear-gradient(to bottom, #9ed7be, #41B883);
-  color: #fafafa;
-}
-
-.tag-red {
-  background: #cb2d3e;
-  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
-  color: #fafafa;
-}
 </style>
