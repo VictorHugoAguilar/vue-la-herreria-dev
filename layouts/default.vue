@@ -19,16 +19,4 @@ body {
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-bottom: 15px;
-}
-
-p:last-of-type {
-  margin-bottom: 0px;
-}
 </style>
