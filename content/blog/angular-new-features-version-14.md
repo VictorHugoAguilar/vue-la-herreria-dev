@@ -63,26 +63,26 @@ created: "2022-11-16T17:30:00.007Z"
 <p>La última versión de Angular viene con cosas incorporadas, una característica más importante de Angular14 le permite conectarse a miembros de componentes protegidos directamente desde nuestras plantillas.</p>
 <p>Brindándole más control sobre la API de superficie pública de componentes reutilizables.</p>
 
-## 7. ng finalización
+## 7. ng finalización
 
 <p>Angular 14 permite a los usuarios completar automáticamente comandos como ng serve en tiempo real.</p>
 <p>Cuando obtiene un error en la línea de comando, las inserciones incorrectas de vocales generalmente causan esos errores.</p>
 <p>Para evitar esto, Angular 14 ha introducido la corrección ortográfica proactiva y el autocompletado en tiempo real para los comandos.</p>
 
-## 8. ng análisis
+## 8. ng análisis
 
 <p>El comando CLI tiene configuraciones de configuración analítica que puede usar para determinar configuraciones de análisis y generar información de análisis en angular 14.</p>
 <p>Los informes más detallados comunican de manera efectiva sus configuraciones de análisis anteriores y brindan información para que sea más fácil establecer sus prioridades.</p>
 
-## 9. caché ng
+## 9. caché ng
 
 <p>El simple comando ng cache proporciona información sobre el caché local en su sistema en angular 14.</p>
 <p>Le permite ajustar, deshabilitar o eliminar información del caché, y puede imprimir estadísticas e información del caché en angular 14.</p>
 <p><span class="highlight">*¿Cómo instalar Angular 14? *</span></p>
 <p>A continuación, instale la versión de Angular CLI globalmente ejecutando el siguiente comando desde la interfaz de línea de comandos.</p>
 
-```javascript
-Instale --global @angular cli@next
+```shell
+install --global @angular cli@next
 ```
 
 <p>Con este comando, puede instalar fácilmente la última versión de Angular CLI en su sistema.</p>
